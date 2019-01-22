@@ -1,0 +1,35 @@
+{
+  "name": "@ryb73/opt-ex",
+  "version": "0.0.1",
+  "description": "option utilities for Bucklescript",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ryb73/opt-ex.git"
+  },
+  "files": [
+    "/bsconfig.json",
+    "/src"
+  ],
+  "bugs": {
+    "url": "https://github.com/ryb73/opt-ex/issues"
+  },
+  "homepage": "https://github.com/ryb73/opt-ex#readme",
+  "keywords": [
+    "bucklescript",
+    "reason",
+    "reasonml"
+  ],
+  "author": "Ryan Biwer",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run clean && bsb -make-world",
+    "watch": "npm run clean && bsb -make-world -w",
+    "clean": "rm -rf lib && bsb -clean-world",
+    "postinstall": "[ ! -f package-links.json ] || ppl link-file"
+  },
+  "peerDependencies": {
+    "bs-platform": "^4.0.0"
+  }
+}
