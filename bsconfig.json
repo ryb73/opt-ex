@@ -1,9 +1,10 @@
 {
     "name": "@ryb73/opt-ex",
+    "bs-dev-dependencies": [ "@glennsl/bs-jest" ],
     "sources": [
         { "dir": "src" },
         {
-            "dir": "test",
+            "dir": "__tests__",
             "type": "dev"
         }
     ],
