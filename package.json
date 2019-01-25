@@ -9,7 +9,8 @@
   },
   "files": [
     "/bsconfig.json",
-    "/src"
+    "/src",
+    "/lib/js/src"
   ],
   "bugs": {
     "url": "https://github.com/ryb73/opt-ex/issues"
