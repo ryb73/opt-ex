@@ -16,6 +16,20 @@ describe("defaultDelayed", () => {
     });
 });
 
+describe("bindNone", () => {
+    test("Some", () => {
+        Some(1)
+        |> bindNone(() => failwith("Shouldn't execute"))
+        |> expect |> toBe(Some(1));
+    });
+
+    test("None", () => {
+        None
+        |> bindNone(() => Some(2))
+        |> expect |> toBe(Some(2));
+    });
+});
+
 describe("mapDefaultDelayed", () => {
     test("Some", () => {
         Some(1)

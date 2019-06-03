@@ -6,11 +6,13 @@ let flatten = fun
     | Some(o) => o
     | None => None;
 
-let defaultDelayed = (defaultFn, opt) =>
-    switch opt {
-        | Some(v) => v
-        | None => defaultFn()
-    };
+let defaultDelayed = (fn) => fun
+    | None => fn()
+    | Some(v) => v;
+
+let bindNone = (fn) => fun
+    | None => fn()
+    | _ as o => o;
 
 let mapDefaultDelayed = (mapFn, defaultFn, opt) =>
     opt
