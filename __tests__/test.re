@@ -43,3 +43,17 @@ describe("mapDefaultDelayed", () => {
         |> expect |> toBe(4);
     });
 });
+
+describe("bindNoneDelayed", () => {
+    test("Some", () => {
+        Some(1)
+        |> bindNoneDelayed((*)(2), () => failwith("Shouldn't execute"))
+        |> expect |> toBe(Some(2));
+    });
+
+    test("None", () => {
+        None
+        |> bindNoneDelayed((*)(2), () => Some(4))
+        |> expect |> toBe(Some(4));
+    });
+});

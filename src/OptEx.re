@@ -19,6 +19,11 @@ let mapDefaultDelayed = (mapFn, defaultFn, opt) =>
     |> map(_, mapFn)
     |> defaultDelayed(defaultFn);
 
+let bindNoneDelayed = (mapFn, defaultFn, opt) =>
+    opt
+    |> map(_, mapFn)
+    |> bindNone(defaultFn);
+
 module Operators = {
     let (|?) = getWithDefault;
 };
