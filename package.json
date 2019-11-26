@@ -30,9 +30,10 @@
     "postinstall": "[ ! -f package-links.json ] || ppl link-file"
   },
   "peerDependencies": {
-    "bs-platform": "^5.0.0"
+    "bs-platform": "^5.0.0|^6.0.0"
   },
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.4.9"
+    "@glennsl/bs-jest": "^0.4.9",
+    "bs-platform": "6.0.0"
   }
 }

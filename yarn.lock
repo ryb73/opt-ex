@@ -620,6 +620,11 @@ browser-resolve@^1.11.3:
   dependencies:
     resolve "1.1.7"
 
+bs-platform@6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-6.0.0.tgz#92b2a45787538289b63b7a4e3611bb661e01c1f6"
+  integrity sha512-6PWtziwGNtR1fbY4EP1h9M8jsLBOVt3/bIa/HCyf6dRA/WNygKXsj3s5QIqmhbjBozCLUtinY8jpas9Y6pdbVA==
+
 bser@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/bser/-/bser-2.0.0.tgz#9ac78d3ed5d915804fd87acb158bc797147a1719"
