@@ -1,6 +1,6 @@
 {
   "name": "@ryb73/opt-ex",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "option utilities for Bucklescript",
   "main": "index.js",
   "repository": {
